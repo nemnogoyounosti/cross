@@ -1,0 +1,9 @@
+@import "../misc/bootstrap";
+@import "../sprite";
+
+.close {
+	//@include retina-sprite($close-group);
+	display: block;
+	position: relative;
+	opacity: 1 !important;
+}

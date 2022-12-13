@@ -1,0 +1,24 @@
+{
+    "name": "ideaplus.ru/ideaplus.ru",
+    "type": "project",
+    "description": "Ideaplus Web Site",
+    "license": "private",
+    "require": {
+        "smarty/smarty": "~3.1",
+        "gregwar/captcha": "1.*",
+        "phpmailer/phpmailer": "^6.1",
+        "ext-mbstring": "*",
+        "ext-json": "*",
+        "ext-pcntl": "*",
+        "ext-posix": "*",
+		"ext-gd": "*",
+        "vlucas/phpdotenv": "^5.2",
+        "ifsnop/mysqldump-php": "^2.9",
+        "dg/mysql-dump": "^1.5"
+	},
+    "autoload": {
+        "psr-4": {
+            "App\\": "engine/app"
+        }
+    }
+}

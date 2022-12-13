@@ -1,0 +1,10 @@
+http/css/*
+http/img/*
+http/js/*
+http/html
+http/userfiles/*
+engine/tpl_c/*
+src/css/_sprite.scss
+.idea
+node_modules
+vendor

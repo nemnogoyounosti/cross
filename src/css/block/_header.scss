@@ -1,0 +1,57 @@
+@import "../sprite";
+@import "../misc/bootstrap";
+
+.header {
+	margin-bottom: -102px;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	position: relative;
+	z-index: 5;
+	justify-content: space-between;
+
+	@include media-max(lg) {
+		align-items: baseline;
+		margin-top: 20px;
+	}
+}
+
+
+.header_bottom {
+	margin-bottom: 0;
+}
+
+.header-price {
+	ul {
+		padding-left: 0;
+		margin: 0;
+
+		li {
+			color: #ff0e00;
+			list-style: square;
+
+			a {
+				text-decoration: none;
+				color: white;
+
+				&:hover {
+					color: #ff0e00;
+					transition: all .2s;
+				}
+			}
+		}
+	}
+}
+
+.header_color {
+	ul {
+		li {
+			a {
+				color: black;
+			}
+		}
+	}
+}
