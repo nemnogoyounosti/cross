@@ -1,8 +1,0 @@
-@import "../misc/bootstrap";
-@import "../sprite";
-
-.burger {
-	@include retina-sprite($burger-group);
-	display: block;
-	position: relative;
-}
