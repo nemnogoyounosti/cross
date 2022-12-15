@@ -21,8 +21,11 @@ html, body {
 	height: 100%;
 	color: #000;
 
+
 	@include media-max(lg){
-		background-image: url(../../img/bg-2.png);
+		background-image: linear-gradient(rgba(226, 228, 230, .3), rgba(226, 228, 230, .3)), url(../../img/bg-2.png);
+		background-color: #E2E4E6;
+		overflow: auto;
 	}
 }
 
