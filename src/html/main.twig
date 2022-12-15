@@ -55,10 +55,13 @@
                                                 <td><span>41</span> (265mm)</td>
                                                 <td>0</td>
                                                 <td>
-                                                    <div class="number disabled" data-step="1" data-min="0" data-max="100">
-                                                        <a href="#" class="number-minus">−</a>
-                                                        <input class="number-text" type="text" name="count" value="0">
-                                                        <a href="#" class="number-plus">+</a>
+                                                    <div class="formOrder-col">
+                                                        <div class="number disabled" data-step="1" data-min="0" data-max="10">
+                                                            <a href="#" class="number-minus">−</a>
+                                                            <input class="number-text" type="text" name="count" value="0">
+                                                            <a href="#" class="number-plus">+</a>
+                                                        </div>
+                                                        <span class="error">Не корректно</span>
                                                     </div>
                                                 </td>
                                                 <td></td>
@@ -68,10 +71,13 @@
                                                 <td><span>42</span> (275mm)</td>
                                                 <td>2</td>
                                                 <td>
-                                                    <div class="number" data-step="1" data-min="0" data-max="100">
-                                                        <a href="#" class="number-minus">−</a>
-                                                        <input class="number-text" type="text" name="count" value="0">
-                                                        <a href="#" class="number-plus">+</a>
+                                                    <div class="formOrder-col">
+                                                        <div class="number" data-step="1" data-min="0" data-max="10">
+                                                            <a href="#" class="number-minus">−</a>
+                                                            <input class="number-text" type="text" name="count" value="0">
+                                                            <a href="#" class="number-plus">+</a>
+                                                        </div>
+                                                        <span class="error">Не корректно</span>
                                                     </div>
                                                 </td>
                                                 <td>3 300 ₽</td>
@@ -81,10 +87,12 @@
                                                 <td><span>43</span> (285mm)</td>
                                                 <td>3</td>
                                                 <td>
-                                                    <div class="number" data-step="1" data-min="0" data-max="100">
-                                                        <a href="#" class="number-minus">−</a>
-                                                        <input class="number-text" type="text" name="count" value="0">
-                                                        <a href="#" class="number-plus">+</a>
+                                                    <div class="formOrder-col">
+                                                        <div class="number" data-step="1" data-min="0" data-max="10">
+                                                            <a href="#" class="number-minus">−</a>
+                                                            <input class="number-text" type="text" name="count" value="0">
+                                                            <a href="#" class="number-plus">+</a>
+                                                        </div>
                                                     </div>
                                                 </td>
                                                 <td>3 300 ₽</td>
@@ -94,10 +102,12 @@
                                                 <td><span>44</span> (290mm)</td>
                                                 <td>2</td>
                                                 <td>
-                                                    <div class="number" data-step="1" data-min="0" data-max="100">
-                                                        <a href="#" class="number-minus">−</a>
-                                                        <input class="number-text" type="text" name="count" value="0">
-                                                        <a href="#" class="number-plus">+</a>
+                                                    <div class="formOrder-col">
+                                                        <div class="number" data-step="1" data-min="0" data-max="10">
+                                                            <a href="#" class="number-minus">−</a>
+                                                            <input class="number-text" type="text" name="count" value="0">
+                                                            <a href="#" class="number-plus">+</a>
+                                                        </div>
                                                     </div>
                                                 </td>
                                                 <td></td>
@@ -107,11 +117,13 @@
                                                 <td><span>45</span> (295mm)</td>
                                                 <td>0</td>
                                                 <td>
-                                                    <div class="number disabled" data-step="1" data-min="0" data-max="100">
-                                                        <a href="#" class="number-minus">−</a>
-                                                        <input class="number-text" type="text" name="count" value="0">
-                                                        <a href="#" class="number-plus">+</a>
-                                                    </div>
+                                                   <div class="formOrder-col">
+                                                       <div class="number disabled" data-step="1" data-min="0" data-max="10">
+                                                           <a href="#" class="number-minus">−</a>
+                                                           <input class="number-text" type="text" name="count" value="0">
+                                                           <a href="#" class="number-plus">+</a>
+                                                       </div>
+                                                   </div>
                                                 </td>
                                                 <td></td>
                                             </tr>
@@ -159,24 +171,23 @@
                                     ФИО
                                 </label>
                                 <input type="text" class="form-control" id="Fio" placeholder="ФИО">
+                                <span class="error">Не заполнено</span>
                             </div>
-                            <div class="form-group phone-wrapper">
+                            <div class="form-group">
                                 <label for="Phone">
                                     <span><i class="icon-cube"></i></span>
                                     Телефон
                                 </label>
-                                <input type="tel" class="form-control phone_mask phone-1" id="Phone" inputmode="tel" placeholder="Телефон">
-                                <span class="error not-visible">Не корректно</span>
-                                <span class="warning not-visible">Не заполнено</span>
+                                <input type="tel" class="form-control phone_mask" id="Phone" inputmode="tel" placeholder="Телефон">
+                                <span class="error">Не корректно</span>
                             </div>
-                            <div class="form-group email-wrapper">
+                            <div class="form-group">
                                 <label for="Email">
                                     <span><i class="icon-cube"></i></span>
                                     E-mail
                                 </label>
-                                <input type="text" class="form-control email-1" id="Email" maxlength="30" inputmode="email" placeholder="E-mail">
-                                <span class="error not-visible">Не корректно</span>
-                                <span class="warning not-visible">Не заполнено</span>
+                                <input type="text" class="form-control email_mask" id="Email" maxlength="30" inputmode="email" placeholder="E-mail">
+                                <span class="error">Не корректно</span>
                             </div>
                             <div class="form-group">
                                 <label for="Address">

@@ -53,25 +53,17 @@ a[href^="tel"] {
 	position: absolute;
 	top: 60px;
 	font-size: 12px;
+	font-weight: 600 !important;
 }
 
-.error.not-visible {
-	display: none;
-}
-
-.warning{
+.number ~ .error{
 	color: red;
 	position: absolute;
-	top: 60px;
-	font-size: 12px;
-}
-
-.warning.not-visible {
-	opacity: 0;
-}
-
-.input-error{
-	border: 1px solid red !important;
+	top: 40px;
+	font-size: 10px;
+	width: 80px;
+	left: 0;
+	font-weight: 600 !important;
 }
 
 @import "block/page";
