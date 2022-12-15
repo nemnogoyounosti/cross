@@ -2,56 +2,21 @@
 @import "../misc/bootstrap";
 
 .header {
-	margin-bottom: -102px;
-}
-
-.header-content {
-	display: flex;
-	align-items: center;
-	margin-top: 30px;
+	max-width: 800px;
+	width: 94%;
 	position: relative;
-	z-index: 5;
-	justify-content: space-between;
+	margin: 70px auto 0;
+	z-index: 999;
 
-	@include media-max(lg) {
-		align-items: baseline;
-		margin-top: 20px;
+	img{
+		width: 100%;
+		object-fit: cover;
+		min-height: 100%;
 	}
-}
 
-
-.header_bottom {
-	margin-bottom: 0;
-}
-
-.header-price {
-	ul {
-		padding-left: 0;
-		margin: 0;
-
-		li {
-			color: #ff0e00;
-			list-style: square;
-
-			a {
-				text-decoration: none;
-				color: white;
-
-				&:hover {
-					color: #ff0e00;
-					transition: all .2s;
-				}
-			}
-		}
-	}
-}
-
-.header_color {
-	ul {
-		li {
-			a {
-				color: black;
-			}
-		}
+	@include media-max(lg){
+		max-width: 100%;
+		width: 100%;
+		margin: 0 auto;
 	}
 }

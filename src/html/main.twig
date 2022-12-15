@@ -2,6 +2,238 @@
 
 {% block content %}
 
+    <div class="formOrder">
+        <div class="formOrder-bg">
+            <div class="content">
+                <div class="formOrder-title">
+                    <p>Новый заказ</p>
+                </div>
 
+                <div class="formOrder-form">
+                    <div class="formOrder-left">
+                        <form>
+                            <div class="form-group">
+                                <label for="Model">
+                                    <span><i class="icon-cube"></i></span>
+                                    Модель
+                                </label>
+                                <input type="text" class="form-control" id="Model">
+                            </div>
+                            <div class="form-group">
+                                <label for="VendorCode">
+                                    <span><i class="icon-cube"></i></span>
+                                    Артикул
+                                </label>
+                                <input type="text" class="form-control" id="VendorCod">
+                            </div>
+                            <div class="form-group">
+                                <label for="Price">
+                                    <span><i class="icon-cube"></i></span>
+                                    Цена за пару
+                                </label>
+                                <input type="text" class="form-control" id="Price">
+                            </div>
+                            <div class="form-group">
+                                <label for="Order">
+                                    <span><i class="icon-cube"></i></span>
+                                    Выберите размер и количество пар
+                                </label>
+
+                                <div class="formOrder-order" id="Order">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Размер</th>
+                                                <th>Остаток</th>
+                                                <th>Кол-во</th>
+                                                <th>Цена</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td><span>41</span> (265mm)</td>
+                                                <td>0</td>
+                                                <td>
+                                                    <div class="number disabled" data-step="1" data-min="0" data-max="100">
+                                                        <a href="#" class="number-minus">−</a>
+                                                        <input class="number-text" type="text" name="count" value="0">
+                                                        <a href="#" class="number-plus">+</a>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><span>42</span> (275mm)</td>
+                                                <td>2</td>
+                                                <td>
+                                                    <div class="number" data-step="1" data-min="0" data-max="100">
+                                                        <a href="#" class="number-minus">−</a>
+                                                        <input class="number-text" type="text" name="count" value="0">
+                                                        <a href="#" class="number-plus">+</a>
+                                                    </div>
+                                                </td>
+                                                <td>3 300 ₽</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><span>43</span> (285mm)</td>
+                                                <td>3</td>
+                                                <td>
+                                                    <div class="number" data-step="1" data-min="0" data-max="100">
+                                                        <a href="#" class="number-minus">−</a>
+                                                        <input class="number-text" type="text" name="count" value="0">
+                                                        <a href="#" class="number-plus">+</a>
+                                                    </div>
+                                                </td>
+                                                <td>3 300 ₽</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><span>44</span> (290mm)</td>
+                                                <td>2</td>
+                                                <td>
+                                                    <div class="number" data-step="1" data-min="0" data-max="100">
+                                                        <a href="#" class="number-minus">−</a>
+                                                        <input class="number-text" type="text" name="count" value="0">
+                                                        <a href="#" class="number-plus">+</a>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><span>45</span> (295mm)</td>
+                                                <td>0</td>
+                                                <td>
+                                                    <div class="number disabled" data-step="1" data-min="0" data-max="100">
+                                                        <a href="#" class="number-minus">−</a>
+                                                        <input class="number-text" type="text" name="count" value="0">
+                                                        <a href="#" class="number-plus">+</a>
+                                                    </div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="formOrder-all">
+                                        <p>Итого</p>
+                                        <p>6 600 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="formOrder-delivery">
+                                    <label>
+                                        <span><i class="icon-cube"></i></span>
+                                        Способ доставки
+                                    </label>
+                                    
+                                    <div class="formOrder-icon">
+                                        <img src="/img/logo_sdek.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="formOrder-point">
+                                    <label>
+                                        <span><i class="icon-cube"></i></span>
+                                        Выбрать пункт выдачи
+                                    </label>
+
+                                    <div class="formOrder-leftButton">
+                                        <button type="button" class="btn1">Выбрать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="formOrder-right">
+                        <form>
+                            <div class="form-group">
+                                <label for="Fio">
+                                    <span><i class="icon-cube"></i></span>
+                                    ФИО
+                                </label>
+                                <input type="text" class="form-control" id="Fio" placeholder="ФИО">
+                            </div>
+                            <div class="form-group phone-wrapper">
+                                <label for="Phone">
+                                    <span><i class="icon-cube"></i></span>
+                                    Телефон
+                                </label>
+                                <input type="tel" class="form-control phone_mask phone-1" id="Phone" inputmode="tel" placeholder="Телефон">
+                                <span class="error not-visible">Не корректно</span>
+                                <span class="warning not-visible">Не заполнено</span>
+                            </div>
+                            <div class="form-group email-wrapper">
+                                <label for="Email">
+                                    <span><i class="icon-cube"></i></span>
+                                    E-mail
+                                </label>
+                                <input type="text" class="form-control email-1" id="Email" maxlength="30" inputmode="email" placeholder="E-mail">
+                                <span class="error not-visible">Не корректно</span>
+                                <span class="warning not-visible">Не заполнено</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="Address">
+                                    <span><i class="icon-cube"></i></span>
+                                    Адрес доставки
+                                </label>
+
+                                <textarea class="form-control" id="Address" cols="0" rows="0" placeholder="Адрес"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="Address">
+                                    <span><i class="icon-cube"></i></span>
+                                    Ваш заказ:
+                                </label>
+
+                                <div class="formOrder-total">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <p>Модель:</p>
+                                        </div>
+
+                                        <div class="col-9">
+                                            <div class="formOrder-product">
+                                                <p>Reebok Terrain GTX Gore-Tex (Зима)</p>
+                                            </div>
+
+                                            <div class="formOrder-info">
+                                                <div class="formOrder-item">
+                                                    <p>42 (275mm)</p>
+                                                    <p>1 шт</p>
+                                                    <p>3 300 ₽</p>
+                                                </div>
+                                                <div class="formOrder-item">
+                                                    <p>43 (285mm)</p>
+                                                    <p>1 шт</p>
+                                                    <p>3 300 ₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="formOrder-allPrice">
+                                <p>Сумма заказа</p>
+                                <p>6 600 ₽</p>
+                            </div>
+                        </form>
+
+                        <div class="formOrder-button">
+                            <button type="button" class="btn2">Перейти к оплате</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
